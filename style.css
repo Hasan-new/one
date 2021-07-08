@@ -1,0 +1,25 @@
+h1{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.name-highlight{
+    color: goldenrod;
+}
+.half-width{
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    padding-left: 2px;
+}
+.half-width img{
+    width: 100%;
+}
+.top-banner{
+    background-image: url(images/top-banner.png);
+    background-repeat: no-repeat;
+}
+section{
+    height:500px;
+}
+

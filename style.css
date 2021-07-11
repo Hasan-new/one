@@ -64,6 +64,12 @@ p{
     border-image: linear-gradient(180deg, red, purple);
     border-image-slice: 1;   
 }
+.container{
+    text-align: center;
+}
+.container h1{
+    color: coral;
+}
 footer{
     text-align: center;
 }

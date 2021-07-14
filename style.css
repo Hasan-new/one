@@ -109,6 +109,7 @@ p{
     width: 100px;
     text-align: center;
     padding-top: 70px;
+    color: #DC143C;
     margin: 0 auto;
     background-color: red;
     animation-name: stretch;

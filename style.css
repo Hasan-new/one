@@ -1,20 +1,36 @@
 body{
     margin: 0;
 }
-@keyframes slidein {
-    0%{
-        left: 0;
-        top: 0;
-    }
-    /* 50%{
-        left: 600px;
-        top: 100px;
-    } */
-    100%{
-        left: 900px;
-        top:0;
-    }
-}
+.polling_message {
+    color: white;
+    float: left;
+    margin-right: 2%;
+  }
+  
+  .view_port {
+    background-color: black;
+    height: 40px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .cylon_eye {
+    background-color: red;
+    background-image: linear-gradient(to right,
+        rgba(0, 0, 0, .9) 25%,
+        rgba(0, 0, 0, .1) 50%,
+        rgba(0, 0, 0, .9) 75%);
+    color: white;
+    height: 100%;
+    width: 20%;
+  
+    -webkit-animation: 4s linear 0s infinite alternate move_eye;
+            animation: 4s linear 0s infinite alternate move_eye;
+  }
+  
+  @-webkit-keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+          @keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+  
 h1{
     font-size: 40px;
     font-family: 'Poppins', sans-serif;
@@ -84,26 +100,10 @@ p{
 .container h1{
     color: coral;
 }
-.ball {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: green;
-    position: absolute;
+.polling_message p{
+    color: white;
 }
-.animation {
-    background-color: lightcoral;
-    height: 200px;
-    min-width: 800px;
-}
-.ball-text {
-    text-align: center;
-    color: #ffffff;
-    margin-top: 35%;
-}
-.animation:hover .ball {
-    animation: slidein 5s ease-in-out 1s infinite alternate ;
-}
+
 footer{
     text-align: center;
 }
